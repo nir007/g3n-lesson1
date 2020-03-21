@@ -32,11 +32,11 @@ func main()  {
 		panic(err)
 	}
 
-	gTour := geometry.NewBox(2, 2, 2)
+	g := geometry.NewBox(2, 2, 2)
 	mat := material.NewStandard(math32.NewColor("White"))
 	mat.AddTexture(txSpace)
 
-	cube := graphic.NewMesh(gTour, mat)
+	cube := graphic.NewMesh(g, mat)
 	cube.RotateX(90)
 	cube.RotateY(40)
 	cube.RotateZ(-80)
